@@ -7,6 +7,7 @@ header {
 }
 
 a {
+    
     justify-content: center;
     color: black;
     text-decoration: none;
@@ -21,8 +22,90 @@ a {
     padding: 5px;
     border-radius: 5%;
     color: white;
-    background-color: ;
+    background-color: #4285f4;
     border-color: #4285f4;
     background-color: rgb(70, 131, 234);
     
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 5fr 1fr 1fr;
+    grid-template-rows: 2fr repeat(3, 0.8fr) 1fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    
+    }
+    
+    .div1 { grid-area: 1 / 1 / 2 / 6; }
+    .div2 { grid-area: 2 / 2 / 3 / 5; }
+    .div3 { grid-area: 3 / 2 / 4 / 5; }
+    .div4 { grid-area: 4 / 2 / 5 / 5; }
+    .div5 {grid-area: 5/2/6/6}
+    
+
+.div2{
+    margin-left:auto;
+    margin-right:auto;
+}
+.div3{
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:30px;
+    
+}
+
+.search{
+    width: 450px;
+    height: 40px;
+    border-color: #EEE;
+    border-radius: 15%;
+}
+
+.search:hover{
+    box-shadow: 0px 0px 5px 3px rgba(204,204,204,1);
+} 
+
+.div4{
+    display:flex;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 20px;
+    
+}
+
+.searchButton{
+    height: 70%;
+    width: 140px;
+    border-radius: 5%;
+    background-color: #eee;
+    border:none;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #777;
+    font-size:13px;
+}
+
+.searchButton:hover{
+
+    color: #2a2a2a;
+    background-color: #eaeaea;
+    border-style: solid;
+    border-color: rgba(68, 68, 68, 0.5);
+    border-width: 1px;
+}
+
+.div5{
+   margin-left: 38%;
+    
+}
+
+.language{
+    font-size:11px;
+
+}
+
+.blue{
+    color:blue;
+    text-decoration: underline;
 }
